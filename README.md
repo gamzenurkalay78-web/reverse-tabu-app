@@ -6,7 +6,7 @@ Lise düzeyinde bilgisayar ağları kavramlarını, tabu mantığını tersine �
 - Gamzenur Kalay 21091030 → Pedagojik yapı tasarımı ana proje yönetimi
 - Sedanur Canikli 22091033 → Tasarım UI UX ve görsel düzenleme
 - Barış Bozdemir 22091019 → İçerik yönetimi ve üretimi kelime ve hazine terimleri
-- İdris → İçerik yönetimi ve üretimi kelime ve hazine terimleri
+- İdris Faruk Erkuş 21091016 → İçerik yönetimi ve üretimi kelime ve hazine terimleri
 
 
 ## Ortak Sorumluluk
