@@ -4,7 +4,7 @@ Lise düzeyinde bilgisayar ağları kavramlarını, tabu mantığını tersine �
 
 ## Grup Üyeleri ve Görev Dağılımı
 - Gamzenur Kalay 21091030 → Pedagojik yapı tasarımı ana proje yönetimi
-- Seda → Tasarım UI UX ve görsel düzenleme
+- Sedanur Canikli 22091033 → Tasarım UI UX ve görsel düzenleme
 - Barış Bozdemir 22091019 → İçerik yönetimi ve üretimi kelime ve hazine terimleri
 - İdris → İçerik yönetimi ve üretimi kelime ve hazine terimleri
 
