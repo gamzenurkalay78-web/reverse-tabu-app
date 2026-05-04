@@ -10,5 +10,4 @@ Lise düzeyinde bilgisayar ağları kavramlarını, tabu mantığını tersine �
 - Seda → Tasarım UI UX ve görsel düzenleme
 
 ## Ortak Sorumluluk
-
 Tüm ekip üyeleri proje kapsamında kod geliştirme sürecine aktif olarak katkı sağlamaktadır
