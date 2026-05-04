@@ -5,6 +5,6 @@ Grup Üyeleri ve Görev Dağılımı
 Barış → İçerik yönetimi ve üretimi kelime ve hazine terimleri
 Gamzenur → Pedagojik yapı tasarımı ana proje yönetimi
 Seda → Tasarım UI UX ve görsel düzenleme
-Ortak Sorumluluk
 
+Ortak Sorumluluk
 Tüm ekip üyeleri proje kapsamında kod geliştirme sürecine aktif olarak katkı sağlamaktadır
