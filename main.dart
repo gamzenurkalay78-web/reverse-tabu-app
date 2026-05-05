@@ -105,6 +105,6 @@ class _GameScreenState extends State<GameScreen> {
                 const SizedBox(width: 12),
                 _ScoreCard(label: 'TAKIM 2', score: _score2, active: _team == 2),
               ]),
-
+  const SizedBox(height: 20),
 
 
