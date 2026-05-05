@@ -176,5 +176,120 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 }
+class _HiddenCard extends StatelessWidget {
+  const _HiddenCard({super.key});
 
+
+  @override
+  Widget build(BuildContext context) {
+    return _CardShell(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: const [
+          Icon(Icons.person_outline, size: 52, color: _lagoon),
+          SizedBox(height: 14),
+          Text('SUNUCU',
+              style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold,
+                  color: _dark, letterSpacing: 3)),
+          SizedBox(height: 8),
+          Text('Dokun ve anlatmaya başla',
+              style: TextStyle(fontSize: 13, color: _lagoon)),
+        ],
+      ),
+    );
+  }
+}
+
+
+// ============ KARTI AÇIK (terim + yasaklı kelimeler) ============
+class _RevealedCard extends StatelessWidget {
+  final TabuCard card;
+  const _RevealedCard({required this.card, super.key});
+
+
+  @override
+  Widget build(BuildContext context) {
+    return _CardShell(
+      child: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // Terim
+            Text(card.term,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                    fontSize: 30, fontWeight: FontWeight.bold, color: _lagoon)),
+            const SizedBox(height: 16),
+            Container(height: 2, width: 48, color: _coral),
+            const SizedBox(height: 20),
+
+
+            // Yasaklı kelimeler etiketi
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.key, size: 14, color: _coral),
+                SizedBox(width: 4),
+                Text('ANAHTAR KELİMELER',
+                    style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold,
+                        color: _coral, letterSpacing: 1.2)),
+              ],
+            ),
+            const SizedBox(height: 12),
+
+
+            // Kelimeler
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              alignment: WrapAlignment.center,
+              children: card.keyWords.map((kw) => Container(
+                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+                decoration: BoxDecoration(
+                  color: _coral.withOpacity(0.12),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: _coral.withOpacity(0.5)),
+                ),
+                child: Text(kw,
+                    style: const TextStyle(
+                        fontSize: 14, fontWeight: FontWeight.w600, color: _dark)),
+              )).toList(),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+// ============ SONUÇ KARTI (definition gösterir) ============
+class _ResultCard extends StatelessWidget {
+  final TabuCard card;
+  final bool correct;
+  const _ResultCard({required this.card, required this.correct, super.key});
+
+
+  @override
+  Widget build(BuildContext context) {
+    return _CardShell(
+      child: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // Sonuç rozeti
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+              decoration: BoxDecoration(
+                color: correct ? _lagoon : _coral,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Text(
+                correct ? '✓ BİLDİN!' : '✗ GEÇTİN',
+                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13),
+              ),
+            ),
+            const SizedBox(height: 16),
 
