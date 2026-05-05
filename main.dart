@@ -106,5 +106,75 @@ class _GameScreenState extends State<GameScreen> {
                 _ScoreCard(label: 'TAKIM 2', score: _score2, active: _team == 2),
               ]),
   const SizedBox(height: 20),
+   // ── Ana Kart ──
+              Expanded(
+                child: GestureDetector(
+                  onTap: (!_revealed && !_showingResult)
+                      ? () => setState(() => _revealed = true)
+                      : null,
+                  child: AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 300),
+                    child: _showingResult
+                        ? _ResultCard(card: _card, correct: _lastCorrect, key: ValueKey('result_$_index'))
+                        : _revealed
+                            ? _RevealedCard(card: _card, key: ValueKey(_index))
+                            : _HiddenCard(key: const ValueKey('hidden')),
+                  ),
+                ),
+              ),
+
+
+              const SizedBox(height: 20),
+
+
+              // ── BİLDİM / GEÇ veya DEVAM ──
+              if (_showingResult)
+                SizedBox(
+                  width: double.infinity,
+                  child: _Btn(label: 'DEVAM →', color: _lagoon, onTap: _advance),
+                )
+              else
+                Row(children: [
+                  Expanded(child: _Btn(
+                    label: 'BİLDİM ✓',
+                    color: _lagoon,
+                    onTap: _revealed ? () => _next(correct: true) : null,
+                  )),
+                  const SizedBox(width: 12),
+                  Expanded(child: _Btn(
+                    label: 'GEÇ →',
+                    color: _coral,
+                    onTap: _revealed ? () => _next(correct: false) : null,
+                  )),
+                ]),
+
+
+              const SizedBox(height: 12),
+
+
+              // ── Takim Değiştir ──
+              Row(children: [
+                Expanded(child: _Btn(
+                  label: 'TAKIM DEĞİŞTİR  (Takım $_team)',
+                  color: Colors.white.withOpacity(0.5),
+                  textColor: _dark,
+                  onTap: () => setState(() => _team = _team == 1 ? 2 : 1),
+                )),
+                const SizedBox(width: 12),
+                _Btn(
+                  label: '↺',
+                  color: Colors.white.withOpacity(0.5),
+                  textColor: _dark,
+                  onTap: _resetGame,
+                  width: 52,
+                ),
+              ]),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
 
 
