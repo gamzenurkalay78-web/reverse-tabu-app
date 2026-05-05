@@ -1,4 +1,4 @@
- # Project Description
+https://github.com/gamzenurkalay78-web/reverse-tabu-app.git # Project Description
 
 An educational word game based on explaining basic computer networking concepts at a high school level. The game is built on a reversed Taboo logic, where instead of avoiding certain words, players explain concepts using key keywords to teach and reinforce understanding.
 
