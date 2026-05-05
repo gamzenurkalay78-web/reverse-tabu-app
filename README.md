@@ -1,6 +1,6 @@
 # reverse-tabu-app
 
-Lise düzeyinde bilgisayar ağları kavramlarını, tabu mantığını tersine çevirerek hazine kelimeleriyle açıklama üzerine kurulu eğitsel kelime oyunu
+Lise düzeyinde bilgisayar ağları kavramlarını, tabu mantığını tersine çevirerek anahtar kelimelerle açıklama üzerine kurulu eğitsel kelime oyunu
 
 ## Grup Üyeleri ve Görev Dağılımı
 - Gamzenur Kalay 21091030 → Pedagojik yapı tasarımı ana proje yönetimi
