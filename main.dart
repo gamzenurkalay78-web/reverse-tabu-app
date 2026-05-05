@@ -90,5 +90,21 @@ class _GameScreenState extends State<GameScreen> {
     });
   }
 
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: _aqua,
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+          child: Column(
+            children: [
+              // ── Skorlar ──
+              Row(children: [
+                _ScoreCard(label: 'TAKIM 1', score: _score1, active: _team == 1),
+                const SizedBox(width: 12),
+                _ScoreCard(label: 'TAKIM 2', score: _score2, active: _team == 2),
+              ]),
+
 
 
