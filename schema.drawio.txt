@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Reverse Tabu - Turkuaz Palet" id="0">
+    <mxGraphModel dx="1030" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=1;fillColor=#7FD1E0;strokeColor=#2C8F9E;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="500" width="400" x="100" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="card" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2C8F9E;strokeWidth=4;fontSize=34;fontStyle=1;fontColor=#1E2A2B;" value="SUNUCU" vertex="1">
+          <mxGeometry height="160" width="320" x="140" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="btn1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF7E67;strokeColor=none;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="BİLDİM" vertex="1">
+          <mxGeometry height="50" width="150" x="140" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="btn2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF7E67;strokeColor=none;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" value="GEÇ" vertex="1">
+          <mxGeometry height="50" width="150" x="310" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="forbidden-btn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2C8F9E;strokeColor=none;fontSize=11;fontStyle=1;fontColor=#FFFFFF;" value="⚠️ ANAHTAR KELİMELER" vertex="1">
+          <mxGeometry height="30" width="200" x="200" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="color-main" parent="1" style="rounded=1;fillColor=#7FD1E0;strokeColor=none;fontSize=10;fontColor=#1E2A2B;" value="Aqua Breeze #7FD1E0" vertex="1">
+          <mxGeometry height="25" width="120" x="100" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="color-button" parent="1" style="rounded=1;fillColor=#FF7E67;strokeColor=none;fontSize=10;fontColor=#FFFFFF;" value="Coral Burst #FF7E67" vertex="1">
+          <mxGeometry height="25" width="120" x="240" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="color-accent" parent="1" style="rounded=1;fillColor=#2C8F9E;strokeColor=none;fontSize=10;fontColor=#FFFFFF;" value="Deep Lagoon #2C8F9E" vertex="1">
+          <mxGeometry height="25" width="120" x="380" y="610" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
