@@ -292,4 +292,33 @@ class _ResultCard extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
+  
+            // Terim
+            Text(card.term,
+                textAlign: TextAlign.center,
+                style: const TextStyle(fontSize: 26, fontWeight: FontWeight.bold, color: _lagoon)),
+            const SizedBox(height: 12),
+            Container(height: 2, width: 48, color: _coral),
+            const SizedBox(height: 16),
 
+
+            // Definition
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.info_outline, size: 13, color: _lagoon),
+                SizedBox(width: 4),
+                Text('TANIM', style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold,
+                    color: _lagoon, letterSpacing: 1.2)),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Text(card.definition,
+                textAlign: TextAlign.center,
+                style: const TextStyle(fontSize: 14, color: _dark, height: 1.5)),
+          ],
+        ),
+      ),
+    );
+  }
+}
