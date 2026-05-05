@@ -1,13 +1,21 @@
-# reverse-tabu-app
+ # Project Description
 
-Lise düzeyinde bilgisayar ağları kavramlarını, tabu mantığını tersine çevirerek anahtar kelimelerle açıklama üzerine kurulu eğitsel kelime oyunu
+An educational word game based on explaining basic computer networking concepts at a high school level. The game is built on a reversed Taboo logic, where instead of avoiding certain words, players explain concepts using key keywords to teach and reinforce understanding.
 
-## Grup Üyeleri ve Görev Dağılımı
-- Gamzenur Kalay 21091030 → Pedagojik yapı tasarımı ana proje yönetimi
-- Sedanur Canikli 22091033 → Tasarım UI UX ve görsel düzenleme
-- Barış Bozdemir 22091019 → İçerik yönetimi ve üretimi kelime ve hazine terimleri
-- İdris Faruk Erkuş 21091016 → İçerik yönetimi ve üretimi kelime ve hazine terimleri
+# Group Members and Responsibilities
 
+Gamzenur Kalay (21091030)
+Pedagogical structure design and overall project management
 
-## Ortak Sorumluluk
-Tüm ekip üyeleri proje kapsamında kod geliştirme sürecine aktif olarak katkı sağlamaktadır
+Sedanur Canikli (22091033)
+Design and visual layout
+
+Barış Bozdemir (22091019)
+Content management and creation (keywords and concept development)
+
+İdris Faruk Erkuş (21091016)
+Content management and creation (keywords and concept development)
+
+# Shared Responsibility
+
+All team members actively contribute to the coding and development process of the project.
