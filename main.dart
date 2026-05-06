@@ -353,3 +353,50 @@ class _ScoreCard extends StatelessWidget {
   final int score;
   final bool active;
   const _ScoreCard({required this.label, required this.score, required this.active});
+@override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        decoration: BoxDecoration(
+          color: active ? _lagoon.withOpacity(0.2) : Colors.white.withOpacity(0.5),
+          borderRadius: BorderRadius.circular(16),
+          border: active ? Border.all(color: _lagoon, width: 2) : null,
+        ),
+        child: Column(children: [
+          Text(label,
+              style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: _dark)),
+          const SizedBox(height: 2),
+          Text('$score',
+              style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: _lagoon)),
+          if (active)
+            Container(
+              margin: const EdgeInsets.only(top: 3),
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+              decoration: BoxDecoration(color: _lagoon, borderRadius: BorderRadius.circular(10)),
+              child: const Text('SUNUCU',
+                  style: TextStyle(color: Colors.white, fontSize: 9, fontWeight: FontWeight.bold)),
+            ),
+        ]),
+      ),
+    );
+  }
+}
+
+
+// ============ BUTON ============
+class _Btn extends StatelessWidget {
+  final String label;
+  final Color color;
+  final Color textColor;
+  final VoidCallback? onTap;
+  final double? width;
+
+
+  const _Btn({
+    required this.label,
+    required this.color,
+    this.textColor = Colors.white,
+    this.onTap,
+    this.width,
+  });
