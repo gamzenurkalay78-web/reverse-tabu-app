@@ -322,3 +322,34 @@ class _ResultCard extends StatelessWidget {
     );
   }
 }
+// ============ KART KABUK ============
+class _CardShell extends StatelessWidget {
+  final Widget child;
+  const _CardShell({required this.child});
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(28),
+        border: Border.all(color: _lagoon, width: 3),
+        boxShadow: [BoxShadow(
+          color: _lagoon.withOpacity(0.25),
+          blurRadius: 16, offset: const Offset(0, 8),
+        )],
+      ),
+      child: child,
+    );
+  }
+}
+
+
+// ============ SKOR KARTI ============
+class _ScoreCard extends StatelessWidget {
+  final String label;
+  final int score;
+  final bool active;
+  const _ScoreCard({required this.label, required this.score, required this.active});
