@@ -18,7 +18,30 @@ class ReverseTabuApp extends StatelessWidget {
     );
   }
 }
-// Tema renkleri
+// ============ MODEL ============
+class TabuCard {
+  final String term;
+  final String definition;
+  final List<String> keyWords;
+  const TabuCard({required this.term, required this.definition, required this.keyWords});
+}
+
+
+// ============ VERİTABANI ============
+final List<TabuCard> allCards = [
+  const TabuCard(term: 'Protokol',        definition: 'Ağda gönderilen mesajların formatını ve sırasını belirleyen kurallar bütünüdür.',  keyWords: ['kural', 'mesaj', 'iletişim', 'format', 'ağ']),
+  const TabuCard(term: 'Ana Bilgisayar',  definition: 'Ağda uygulama çalıştıran cihazlardır (bilgisayar, telefon gibi).',                 keyWords: ['cihaz', 'internet', 'kullanıcı', 'bilgisayar', 'telefon']),
+  const TabuCard(term: 'Paket Anahtarlama', definition: 'Verilerin küçük paketlere bölünüp ağda iletilmesi yöntemidir.',                   keyWords: ['veri', 'paket', 'bölmek', 'iletmek', 'router']),
+  const TabuCard(term: 'Devre Anahtarlama', definition: 'İletişim için özel bir hat ayrılan bağlantı türüdür.',                            keyWords: ['hat', 'bağlantı', 'telefon', 'sabit', 'iletişim']),
+  const TabuCard(term: 'Bant Genişliği',  definition: 'Bir ağın veri taşıma kapasitesidir.',                                              keyWords: ['hız', 'internet', 'bps', 'kapasite', 'veri']),
+  const TabuCard(term: 'HTTP',            definition: 'Web sayfalarının iletilmesini sağlayan protokoldür.',                               keyWords: ['web', 'tarayıcı', 'internet', 'site', 'protokol']),
+  const TabuCard(term: 'DNS',             definition: 'Alan adlarını IP adresine çeviren sistemdir.',                                      keyWords: ['alan adı', 'ip', 'çeviri', 'internet', 'adres']),
+  const TabuCard(term: 'TCP',             definition: 'Güvenilir ve sıralı veri iletimi sağlayan protokoldür.',                            keyWords: ['güvenli', 'bağlantı', 'veri', 'internet', 'protokol']),
+  const TabuCard(term: 'UDP',             definition: 'Bağlantısız ve güvenilir olmayan veri iletim protokolüdür.',                        keyWords: ['hızlı', 'güvensiz', 'bağlantı', 'veri', 'protokol']),
+  const TabuCard(term: 'IP Adresi',       definition: 'Ağdaki her cihazın benzersiz kimlik numarasıdır.',                                  keyWords: ['numara', 'cihaz', 'ağ', 'internet', 'kimlik']),
+  const TabuCard(term: 'Router',          definition: 'Paketleri doğru ağa yönlendiren cihazdır.',                                        keyWords: ['yönlendirme', 'paket', 'ağ', 'cihaz', 'internet']),
+  const TabuCard(term: 'Firewall',        definition: 'Ağ güvenliğini sağlayan koruma duvarıdır.',                                        keyWords: ['güvenlik', 'koruma', 'ağ', 'izin', 'engel']),
+];// Tema renkleri
 const _aqua   = Color(0xFF7FD1E0);
 const _lagoon = Color(0xFF2C8F9E);
 const _coral  = Color(0xFFFF7E67);
