@@ -20,7 +20,7 @@ Content management and creation (keywords and concept development)
 # Shared Responsibility
 
 All team members actively contribute to the coding and development process of the project.
-# Current Project Rewiev
+# Current Project View
 https://drive.google.com/drive/folders/15id_ZIl5CTnb99JLvAe7cnAU3MnP7uKN?usp=sharing
 
 This section shows the working state of the prototype. It includes a video demonstrating core features and visuals presenting the interface and user flow.
