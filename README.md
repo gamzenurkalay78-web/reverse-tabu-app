@@ -21,7 +21,9 @@ All team members actively contribute to the coding and development process of th
 # Current Project View
 https://drive.google.com/drive/folders/15id_ZIl5CTnb99JLvAe7cnAU3MnP7uKN?usp=sharing
 
-This section shows the working state of the prototype. It includes a video demonstrating core features and visuals presenting the interface and user flow.
+This section shows the final version of the Reverse Tabu app, fully working on mobile devices.
+
+You can access the APK file here.
 
  # Application Development Stages
 The application idea is based on the “reverse taboo” concept. In the first step of the process, Gamzenur defined the target audience of the game and its pedagogical framework, which is detailed in the Group9_Report.pdf file.
