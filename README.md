@@ -21,7 +21,7 @@ All team members actively contribute to the coding and development process of th
 # Current Project View
 https://drive.google.com/drive/folders/15id_ZIl5CTnb99JLvAe7cnAU3MnP7uKN?usp=sharing
 
-This section shows the final version of the Reverse Tabu app, fully working on mobile devices.
+This section shows the final version of the Reverse Tabu app, fully working on mobile devices. It includes a video demonstrating the core features, interface, and user flow.
 
 You can access the APK file here.
 
