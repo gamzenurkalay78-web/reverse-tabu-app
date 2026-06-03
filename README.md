@@ -1,8 +1,11 @@
 https://github.com/gamzenurkalay78-web/reverse-tabu-app.git 
 # Project Description
 
-An educational word game based on explaining basic computer networking concepts at a high school level. The game is built on a reversed Taboo logic, where instead of avoiding certain words, players explain concepts using key keywords to teach and reinforce understanding.
+This project is a mobile-based educational game developed to support the learning of fundamental concepts and terminology covered in high school-level computer networks and operating systems courses.
 
+The game is based on a reversed Taboo logic. Unlike the traditional Taboo game, players are required to explain technical concepts using given keywords instead of avoiding forbidden words. This approach aims to make computer networking topics more understandable and to reinforce learning.
+
+The application is fully developed to run on mobile devices and is primarily built around a time management system and a team-switching mechanism. This structure allows users to actively engage with course content through an interactive learning experience and to review topics in a more dynamic way.
 # Group Members and Responsibilities (GitHub User Mapping)
 
 Gamzenur Kalay (21091030) @gamzenurkalay78-web – Pedagogical structure design and overall project management
